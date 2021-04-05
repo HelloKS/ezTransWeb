@@ -12,6 +12,8 @@
 필수 환경이 다 갖춰진 상태라면, 명령 프롬프트에서 `python eztrans.py`로 실행할 수 있습니다.
 
 기본값은 127.0.0.1을 호스트로 5000번 포트에서 동작합니다.
+# 자세한 사용 방법
+HOWTO.md 파일을 참고해 주세요.
 # Special Thanks to
 * [Ehnd](https://github.com/sokcuri/ehnd)
 * [Anemone](https://github.com/sokcuri/anemone)
