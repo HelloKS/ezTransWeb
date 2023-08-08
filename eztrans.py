@@ -2,7 +2,6 @@
 from ctypes import WinDLL, c_char_p, c_int, c_wchar_p
 from ctypes.wintypes import BOOL
 from flask import Flask, request
-from gevent.pywsgi import WSGIServer
 import re
 
 app = Flask(__name__)
@@ -38,10 +37,7 @@ def main():
     engine_object = WinDLL('C:\Program Files (x86)\ChangShinSoft\ezTrans XP\J2KEngineH.dll')
     eng.initialize(engine_object)
     
-    http_server = WSGIServer(('127.0.0.1', 5000), app)
-    http_server.serve_forever()
-    
-    #app.run()
+    app.run(host="127.0.0.1", port=5000, threaded=True)
 
 @app.route("/")
 def home():

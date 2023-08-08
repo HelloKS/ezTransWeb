@@ -12,11 +12,11 @@ https://www.python.org/downloads/
 32비트 제약사항은 EZTrans XP 연동과 관련된 사항이기 때문에 제가 수정할 수 없습니다.
 
 ## 외부 라이브러리 설치
-ezTransWeb은 웹 서비스 제공을 위해 외부 라이브러리인 Flask와 Gevent를 사용합니다.
+ezTransWeb은 웹 서비스 제공을 위해 외부 라이브러리인 Flask를 사용합니다.
 
 명령 프롬프트에서 다음과 같이 입력하여 설치할 수 있습니다.
 
-```pip install flask gevent```
+```pip install -r requirements.txt```
 
 설치가 정상적으로 이루어지지 않는 경우, 검색을 통해 해결해주세요. 죄송하지만 시스템마다 문제가 생기는 이유가 달라 그것까지 대응해드리기는 어렵습니다.
 
